@@ -10,21 +10,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 
-const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'heroes', component: HeroListComponent },
-  { path: '**', component: PageNotFoundComponent },
-];
-
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-  ],
   declarations: [
     AppComponent,
     CrisisListComponent,
